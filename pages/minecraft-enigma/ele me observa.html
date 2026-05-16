@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Império</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../../style/enigmas.css">
+
+</head>
+
+</head>
+<body>
+  
+  que disco é esse?
+  <img src="../../images/essaMusicaTaMeioRuimQualDiscoÉEsse.png" alt="" class="enigma-img" />
+  <p class="enigma-text">49 a 44 a.C.</p>
+  <audio id="audio" src="../../sounds/quePorraÉEssa.mp3" loop></audio>
+
+<script>
+  const audio = document.getElementById("audio");
+
+  audio.play().catch(() => {
+    // navegador bloqueou — espera o primeiro clique
+    document.addEventListener("click", () => audio.play(), { once: true });
+  });
+</script>
+
+</body>
+</html>
